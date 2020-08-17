@@ -1,4 +1,4 @@
-class Genre
+class Patient
   attr_accessor :name
   @@all = []
   
@@ -11,7 +11,7 @@ class Genre
     @@all
   end
   
-  def songs
+  def doctor
     Song.all.select{|song| song.genre == self}
   end
   
